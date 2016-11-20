@@ -1,0 +1,347 @@
+/* Standard HTML styles */
+BODY, H1, H2, H3, A, A:link, A:visited, A:hover, A:active, P, UL, OL, LI, TABLE, DIV
+{
+   /* font-family:Verdana, Arial, Helvetica, sans-serif; */
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   color: #000000;
+   font-size: 9pt;
+   line-height: 1.3;
+}
+
+BODY          
+{
+   margin: 5%;
+   padding:0px;
+   background-color: #FFFFFF;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;   
+   /* background-color:#333366; */
+}
+
+A, A:link, A:visited, A:active
+{
+   text-decoration:none;
+   padding-right:2px;
+   padding-left:2px;
+}
+A:hover
+{
+   color: #696969;
+}
+
+P 
+{
+   margin: 0px;
+   padding-bottom: 0.5em;
+   /* line-height:16px; */
+   text-align: justify;
+}
+P.title
+{
+   font-size: 14px;
+   font-weight:bold;
+   color:#000066;
+}
+P.subtitle
+{
+   font-weight:bold;
+   color:#333333;
+   padding-bottom:0px;
+   margin-bottom:0px;
+}
+
+OL, UL
+{
+   margin-top: 0px;
+   padding-right:3px;
+}
+LI
+{
+   margin-top: 5px;
+}
+
+TD
+{
+   vertical-align: top;
+}
+
+IMG
+{
+   border: 0px;
+}
+
+FORM
+{
+   margin:0px;
+}
+
+/* Master layout */
+.MasterLayout
+{
+   width: 780px;
+   background-color: #FFFFFF;
+   align:center;
+   text-align: left;
+   vertical-align: top;
+   /* border-left:1px solid #DFE7EE;*/
+}
+
+/* Header Area */
+.HeaderArea
+{
+   height:48px;
+   background-image: url(images/header-bg.png);
+   background-repeat: repeat-y;
+   color:#FFFFFF;
+}
+.HeaderArea A:link, .HeaderArea A:hover, .HeaderArea A:active, .HeaderArea A:visited
+{
+   display:block;
+   color:#FFFFFF;
+   height: auto;
+   width: auto;
+}
+.HeaderArea A:hover
+{
+   text-decoration: underline;
+}
+
+.Logo
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #FFFFFF;
+	left: 15px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/* Top Menu */
+.Tmenu
+{
+	text-align:center;
+	color:#000000;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: url(images/hmenu-bg.gif);
+	background-repeat: repeat;
+}
+.Tmenu A:link, .Tmenu A:hover, .Tmenu A:active, .Tmenu A:visited
+{
+	display:block;
+	color:#000000;
+	font-size: 14px;
+	text-decoration: none;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.Tmenu A:hover
+{
+	background-image: url(images/menu_bg_o.gif);
+	background-repeat: repeat;
+	background-color: #6699CC;
+}
+.Tmenu TD.active
+{
+	background-repeat:repeat-x;
+	padding:5px 8px;
+	font-weight: bold;
+	color:#146197;
+	background-color: #FF0066;
+}
+.Tmenu TD.separator
+{
+   border-right-width: 1px;
+   border-right-style: groove;
+   border-right-color: #7979BD;
+}
+
+/* Contents Area */
+.ContentArea
+{
+	width:100%;
+	height:100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.ContentArea h1, .ContentArea h2, .ContentArea h3
+{
+	font-size: 10pt;
+	background-color: #DDEEFF;
+	text-indent: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.ContentArea TH
+{
+    background-color: #E0E0E0;
+}
+
+/* Menu in the menu part of the content area */
+.Cmenu
+{
+    /* width: 130px;  for IE only. Should be fixed later. Vasu V */
+
+}
+.Cmenu A:link, .Cmenu A:hover, .Cmenu A:active, .Cmenu A:visited
+{
+	color: #003399;
+	padding: 2px;
+	display: block;
+	text-align: left;
+
+}
+.Cmenu A:hover
+{
+   background:url(images/menu_bg_o.gif);
+}
+.Cmenu TD
+{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #336666;
+	border-bottom-color: #336666;
+
+}
+/* 
+TD.Cmenu  A:hover
+{
+   background-color:#CCCCCC;	
+}
+*/
+.Cmenu TD.active
+{
+   background-color:#CCCCCC;
+}
+/* Menu part of the content area*/
+.CmenuArea {
+	text-align: left;
+	padding-right: 15px;
+        width: 100px;        
+}
+.CmenuArea IMG {
+        width: 100px;
+}
+
+/* Text part of the content area */
+.CtextArea
+{
+       width: 665px;  
+}
+
+
+/* Footer Area */
+.FooterArea
+{
+	background-image: url(images/header-bg.png);
+	color: #FFFFCC;
+	display: block;
+	text-align: center;
+	background-repeat: repeat-y;
+	height: 25px;
+}
+.FooterArea, .FooterArea A:link, .FooterArea A:visited, .FooterArea A:active, .FooterArea A:hover, .FooterArea TD
+{
+	font-size:9px;
+	text-decoration: none;
+	color: #FFFFCC;
+}
+.FooterArea A:hover
+{
+   text-decoration: underline;
+}
+
+.Directory, .Directory A:link, .Directory A:visited, .Directory A:active, .Directory A:hover {
+	font-size: 7pt;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+Table.Directory {
+}
+
+.PageTitle {
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+}
+
+.TmenuCell {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+
+}
+
+.DirIndex, .DirIndex A:link, .DirIndex A:visited, .DirIndex A:active, .DirIndex A:hover {
+	font-family: "Comic Sans MS", "Times New Roman";
+	font-size: 14pt;
+	color: #408080;
+	font-weight: normal;
+}
+
+.DirIndex A:hover {
+	font-family: "Comic Sans MS", "Times New Roman";
+	color: #FF3E3E;
+}
+
+.OddRow {
+}
+
+.EvenRow {
+	background-color: #FFFFE6;
+}
+
+.FlowDiag {
+   /* Process Flow Diagram section*/
+   text-align: center;
+}
+.FlowDiag IMG{
+   /* for the process flow diagram image */
+   width: 660px;  /* for IE only. Should be fixed later. Vasu V */
+   border: 1em;
+   
+}
+
+.ProcDetail {
+   text-align: justify;
+}
+
+.Quote {
+   /* font-family:Verdana, Arial, Helvetica, sans-serif; */
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   color: #000000;
+   font-size: smaller;
+   font-style: italic;
+   font-weight: normal;
+   text-align: right;
+}
+
+.Version {
+   /* font-family:Verdana, Arial, Helvetica, sans-serif; */
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   color: #000000;
+   font-size: smaller;
+   font-style: italic;
+   font-weight: normal;
+   text-align: right;
+}
+
+.DocVersion {
+   /* font-family:Verdana, Arial, Helvetica, sans-serif; */
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+   color: #000000;
+   font-size: smaller;
+   font-style: italic;
+   font-weight: normal;
+   text-align: center;
+}
